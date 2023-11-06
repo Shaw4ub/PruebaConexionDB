@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{48D54F79-3787-46F1-BABA-24DB27C5BB3D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PruebaConexionDB</RootNamespace>
+    <AssemblyName>PruebaConexionDB</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlClient, Version=4.6.1.5, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SqlClient.4.8.5\lib\net461\System.Data.SqlClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="agregarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarCita.Designer.cs">
+      <DependentUpon>agregarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarMedico.Designer.cs">
+      <DependentUpon>agregarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="agregarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="agregarPaciente.Designer.cs">
+      <DependentUpon>agregarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AgregarUsuario.Designer.cs">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="citasMedicas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="citasMedicas.Designer.cs">
+      <DependentUpon>citasMedicas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarMedico.Designer.cs">
+      <DependentUpon>eliminarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarPaciente.Designer.cs">
+      <DependentUpon>eliminarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eliminarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eliminarUsuario.Designer.cs">
+      <DependentUpon>eliminarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Medicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Medicos.Designer.cs">
+      <DependentUpon>Medicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuAdmin.Designer.cs">
+      <DependentUpon>menuAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menuUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menuUsuarios.Designer.cs">
+      <DependentUpon>menuUsuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarCita.Designer.cs">
+      <DependentUpon>modificarCita.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarMedico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarMedico.Designer.cs">
+      <DependentUpon>modificarMedico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarPaciente.Designer.cs">
+      <DependentUpon>modificarPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="modificarUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="modificarUsuario.Designer.cs">
+      <DependentUpon>modificarUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principalPacientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principalPacientes.Designer.cs">
+      <DependentUpon>principalPacientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="principalUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="principalUsuario.Designer.cs">
+      <DependentUpon>principalUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="agregarCita.resx">
+      <DependentUpon>agregarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarMedico.resx">
+      <DependentUpon>agregarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="agregarPaciente.resx">
+      <DependentUpon>agregarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AgregarUsuario.resx">
+      <DependentUpon>AgregarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="citasMedicas.resx">
+      <DependentUpon>citasMedicas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarMedico.resx">
+      <DependentUpon>eliminarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarPaciente.resx">
+      <DependentUpon>eliminarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eliminarUsuario.resx">
+      <DependentUpon>eliminarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Medicos.resx">
+      <DependentUpon>Medicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuAdmin.resx">
+      <DependentUpon>menuAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menuUsuarios.resx">
+      <DependentUpon>menuUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarCita.resx">
+      <DependentUpon>modificarCita.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarMedico.resx">
+      <DependentUpon>modificarMedico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarPaciente.resx">
+      <DependentUpon>modificarPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="modificarUsuario.resx">
+      <DependentUpon>modificarUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principalPacientes.resx">
+      <DependentUpon>principalPacientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="principalUsuario.resx">
+      <DependentUpon>principalUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoClinica.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadricula.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cuadrado.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondoClinica.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoMenu.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silueta-de-multiples-usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\silueta-de-multiples-usuarios1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estetoscopio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factura1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\botonFondo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lineaSub.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Doctor_Female_icon-icons.com_75050.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient_Male_icon-icons.com_75053 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Patient_Male_icon-icons.com_75053 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bordeGRID.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paciente64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citas64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facturas64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\recetas64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrarSesion64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\closeWindow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reporte64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logoClinica1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
