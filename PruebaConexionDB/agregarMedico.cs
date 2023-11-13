@@ -105,6 +105,7 @@ namespace PruebaConexionDB
             {
                 MessageBox.Show("Por favor ingrese solo letras.");
                 txtNombre.Text = txtNombre.Text.Remove(txtNombre.Text.Length - 1);
+                
             }
         }
     }

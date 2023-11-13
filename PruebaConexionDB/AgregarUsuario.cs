@@ -91,6 +91,7 @@ namespace PruebaConexionDB
         {
             //Haz que este texto solo acepte letras
             System.Text.RegularExpressions.Regex.IsMatch(txtNombre.Text, "[^a-zA-Z]");
+            txtNombre.Text = System.Text.RegularExpressions.Regex.Replace(txtNombre.Text, @"[^A-Za-zñÑ\s]", "");
             
         }
 

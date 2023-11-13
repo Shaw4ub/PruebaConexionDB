@@ -101,6 +101,14 @@ namespace PruebaConexionDB
         {
             this.Close();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            System.Text.RegularExpressions.Regex.IsMatch(txtNombre.Text, "[^a-zA-Z]");
+            txtNombre.Text = System.Text.RegularExpressions.Regex.Replace(txtNombre.Text, @"[^A-Za-zñÑ\s]", "");
+            txtNombre.Select(txtNombre.Text.Length, 0);
+        }
     }
 
 }

@@ -89,8 +89,12 @@ namespace PruebaConexionDB
 
         private void txtNombre_TextChanged(object sender, EventArgs e)
         {
-            //Haz que este texto solo acepte letras
+            //Hahaz que este texto solo acepte letras
             txtNombre.Text = System.Text.RegularExpressions.Regex.Replace(txtNombre.Text, @"[^A-Za-zñÑ\s]", "");
+            //muestra una advertencia notifiacando que solo acepta letras
+            MessageBox.Show("Este campo solo acepta letras");
+            txtNombre.Text = txtNombre.Text.Remove(txtNombre.Text.Length - 1);
+
         }
 
         private void txtApellido_TextChanged(object sender, EventArgs e)
