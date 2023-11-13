@@ -81,5 +81,11 @@ namespace PruebaConexionDB
         {
 
         }
+
+        private void btnReportes_Click(object sender, EventArgs e)
+        {
+            //HAz que este boton abra el form Reportesvs
+            AbrirFormEnPanel(new Reportesvs());
+        }
     }
 }

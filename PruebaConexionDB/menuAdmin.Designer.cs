@@ -76,7 +76,7 @@
             this.Menu.Controls.Add(this.btnPacientes);
             this.Menu.Dock = System.Windows.Forms.DockStyle.Left;
             this.Menu.Location = new System.Drawing.Point(0, 0);
-            this.Menu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Menu.Margin = new System.Windows.Forms.Padding(4);
             this.Menu.Name = "Menu";
             this.Menu.Size = new System.Drawing.Size(587, 896);
             this.Menu.TabIndex = 3;
@@ -92,12 +92,13 @@
             this.btnReportes.Image = global::PruebaConexionDB.Properties.Resources.reporte64;
             this.btnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReportes.Location = new System.Drawing.Point(0, 689);
-            this.btnReportes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReportes.Margin = new System.Windows.Forms.Padding(4);
             this.btnReportes.Name = "btnReportes";
             this.btnReportes.Size = new System.Drawing.Size(587, 98);
             this.btnReportes.TabIndex = 12;
             this.btnReportes.Text = "Reportes";
             this.btnReportes.UseVisualStyleBackColor = false;
+            this.btnReportes.Click += new System.EventHandler(this.btnReportes_Click);
             // 
             // btnCerrarSesion
             // 
@@ -111,7 +112,7 @@
             this.btnCerrarSesion.Image = global::PruebaConexionDB.Properties.Resources.cerrarSesion64;
             this.btnCerrarSesion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCerrarSesion.Location = new System.Drawing.Point(0, 788);
-            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrarSesion.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrarSesion.Name = "btnCerrarSesion";
             this.btnCerrarSesion.Size = new System.Drawing.Size(587, 108);
             this.btnCerrarSesion.TabIndex = 11;
@@ -129,7 +130,7 @@
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.Location = new System.Drawing.Point(0, 0);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(587, 98);
             this.button1.TabIndex = 10;
@@ -147,7 +148,7 @@
             this.btnFacturas.Image = global::PruebaConexionDB.Properties.Resources.facturas64;
             this.btnFacturas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFacturas.Location = new System.Drawing.Point(0, 492);
-            this.btnFacturas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFacturas.Margin = new System.Windows.Forms.Padding(4);
             this.btnFacturas.Name = "btnFacturas";
             this.btnFacturas.Size = new System.Drawing.Size(587, 98);
             this.btnFacturas.TabIndex = 9;
@@ -166,7 +167,7 @@
             this.btnRecetas.Image = global::PruebaConexionDB.Properties.Resources.recetas64;
             this.btnRecetas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRecetas.Location = new System.Drawing.Point(0, 394);
-            this.btnRecetas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRecetas.Margin = new System.Windows.Forms.Padding(4);
             this.btnRecetas.Name = "btnRecetas";
             this.btnRecetas.Size = new System.Drawing.Size(587, 98);
             this.btnRecetas.TabIndex = 8;
@@ -185,7 +186,7 @@
             this.btnUsuarios.Image = global::PruebaConexionDB.Properties.Resources.users64;
             this.btnUsuarios.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUsuarios.Location = new System.Drawing.Point(0, 591);
-            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.btnUsuarios.Name = "btnUsuarios";
             this.btnUsuarios.Size = new System.Drawing.Size(587, 98);
             this.btnUsuarios.TabIndex = 2;
@@ -204,7 +205,7 @@
             this.btnMedicos.Image = global::PruebaConexionDB.Properties.Resources.doctor64;
             this.btnMedicos.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnMedicos.Location = new System.Drawing.Point(0, 295);
-            this.btnMedicos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMedicos.Margin = new System.Windows.Forms.Padding(4);
             this.btnMedicos.Name = "btnMedicos";
             this.btnMedicos.Size = new System.Drawing.Size(587, 98);
             this.btnMedicos.TabIndex = 7;
@@ -223,7 +224,7 @@
             this.btnCitas.Image = global::PruebaConexionDB.Properties.Resources.citas64;
             this.btnCitas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCitas.Location = new System.Drawing.Point(0, 197);
-            this.btnCitas.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCitas.Margin = new System.Windows.Forms.Padding(4);
             this.btnCitas.Name = "btnCitas";
             this.btnCitas.Size = new System.Drawing.Size(587, 98);
             this.btnCitas.TabIndex = 6;
@@ -242,7 +243,7 @@
             this.btnPacientes.Image = global::PruebaConexionDB.Properties.Resources.paciente64;
             this.btnPacientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPacientes.Location = new System.Drawing.Point(0, 98);
-            this.btnPacientes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPacientes.Margin = new System.Windows.Forms.Padding(4);
             this.btnPacientes.Name = "btnPacientes";
             this.btnPacientes.Size = new System.Drawing.Size(587, 98);
             this.btnPacientes.TabIndex = 5;
@@ -258,7 +259,7 @@
             this.pnlBarraControl.Controls.Add(this.btnMinimizar);
             this.pnlBarraControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlBarraControl.Location = new System.Drawing.Point(587, 0);
-            this.pnlBarraControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlBarraControl.Margin = new System.Windows.Forms.Padding(4);
             this.pnlBarraControl.Name = "pnlBarraControl";
             this.pnlBarraControl.Size = new System.Drawing.Size(1234, 98);
             this.pnlBarraControl.TabIndex = 4;
@@ -275,7 +276,7 @@
             this.btnBienvenida.Image = global::PruebaConexionDB.Properties.Resources.Doctor_Female_icon_icons_com_75050;
             this.btnBienvenida.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBienvenida.Location = new System.Drawing.Point(0, 0);
-            this.btnBienvenida.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBienvenida.Margin = new System.Windows.Forms.Padding(4);
             this.btnBienvenida.Name = "btnBienvenida";
             this.btnBienvenida.Size = new System.Drawing.Size(437, 98);
             this.btnBienvenida.TabIndex = 0;
@@ -288,7 +289,7 @@
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = global::PruebaConexionDB.Properties.Resources.cerrarIcon;
             this.btnCerrar.Location = new System.Drawing.Point(1172, 0);
-            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
             this.btnCerrar.Size = new System.Drawing.Size(59, 39);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -302,7 +303,7 @@
             this.btnMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimizar.Image = global::PruebaConexionDB.Properties.Resources.menos;
             this.btnMinimizar.Location = new System.Drawing.Point(1114, 0);
-            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnMinimizar.Margin = new System.Windows.Forms.Padding(4);
             this.btnMinimizar.Name = "btnMinimizar";
             this.btnMinimizar.Size = new System.Drawing.Size(59, 39);
             this.btnMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -315,7 +316,7 @@
             this.pnlContenedor.BackColor = System.Drawing.Color.White;
             this.pnlContenedor.Controls.Add(this.pictureBox1);
             this.pnlContenedor.Location = new System.Drawing.Point(587, 98);
-            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlContenedor.Margin = new System.Windows.Forms.Padding(4);
             this.pnlContenedor.Name = "pnlContenedor";
             this.pnlContenedor.Size = new System.Drawing.Size(1237, 945);
             this.pnlContenedor.TabIndex = 5;
@@ -325,7 +326,7 @@
             // 
             this.pictureBox1.Image = global::PruebaConexionDB.Properties.Resources.logoClinica1;
             this.pictureBox1.Location = new System.Drawing.Point(352, 158);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(661, 513);
             this.pictureBox1.TabIndex = 0;
@@ -342,7 +343,7 @@
             this.Controls.Add(this.Menu);
             this.Controls.Add(this.lblMensajeAdmin);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "menuAdmin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ";
