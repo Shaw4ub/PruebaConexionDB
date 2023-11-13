@@ -57,9 +57,10 @@
             // 
             this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCerrar.Image = global::PruebaConexionDB.Properties.Resources.closeWindow;
-            this.btnCerrar.Location = new System.Drawing.Point(752, 8);
+            this.btnCerrar.Location = new System.Drawing.Point(1003, 10);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(44, 32);
+            this.btnCerrar.Size = new System.Drawing.Size(59, 39);
             this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnCerrar.TabIndex = 43;
             this.btnCerrar.TabStop = false;
@@ -76,9 +77,10 @@
             this.btnMedicos.ForeColor = System.Drawing.Color.Black;
             this.btnMedicos.Image = global::PruebaConexionDB.Properties.Resources.citas64;
             this.btnMedicos.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMedicos.Location = new System.Drawing.Point(16, 8);
+            this.btnMedicos.Location = new System.Drawing.Point(21, 10);
+            this.btnMedicos.Margin = new System.Windows.Forms.Padding(4);
             this.btnMedicos.Name = "btnMedicos";
-            this.btnMedicos.Size = new System.Drawing.Size(304, 72);
+            this.btnMedicos.Size = new System.Drawing.Size(405, 89);
             this.btnMedicos.TabIndex = 44;
             this.btnMedicos.Text = "Agregar citas";
             this.btnMedicos.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,9 +93,10 @@
             this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancelar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancelar.ForeColor = System.Drawing.Color.White;
-            this.btnCancelar.Location = new System.Drawing.Point(216, 464);
+            this.btnCancelar.Location = new System.Drawing.Point(288, 571);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(4);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(184, 48);
+            this.btnCancelar.Size = new System.Drawing.Size(245, 59);
             this.btnCancelar.TabIndex = 91;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = false;
@@ -105,9 +108,10 @@
             this.btnGuardarCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardarCita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardarCita.ForeColor = System.Drawing.Color.White;
-            this.btnGuardarCita.Location = new System.Drawing.Point(472, 464);
+            this.btnGuardarCita.Location = new System.Drawing.Point(629, 571);
+            this.btnGuardarCita.Margin = new System.Windows.Forms.Padding(4);
             this.btnGuardarCita.Name = "btnGuardarCita";
-            this.btnGuardarCita.Size = new System.Drawing.Size(184, 48);
+            this.btnGuardarCita.Size = new System.Drawing.Size(245, 59);
             this.btnGuardarCita.TabIndex = 90;
             this.btnGuardarCita.Text = "Agregar cita";
             this.btnGuardarCita.UseVisualStyleBackColor = false;
@@ -120,9 +124,10 @@
             this.lblMotivoCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMotivoCita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMotivoCita.ForeColor = System.Drawing.Color.White;
-            this.lblMotivoCita.Location = new System.Drawing.Point(264, 288);
+            this.lblMotivoCita.Location = new System.Drawing.Point(352, 354);
+            this.lblMotivoCita.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMotivoCita.Name = "lblMotivoCita";
-            this.lblMotivoCita.Size = new System.Drawing.Size(95, 19);
+            this.lblMotivoCita.Size = new System.Drawing.Size(122, 23);
             this.lblMotivoCita.TabIndex = 85;
             this.lblMotivoCita.Text = "Motivo Cita";
             // 
@@ -133,18 +138,20 @@
             this.lblHoraCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblHoraCita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHoraCita.ForeColor = System.Drawing.Color.White;
-            this.lblHoraCita.Location = new System.Drawing.Point(240, 248);
+            this.lblHoraCita.Location = new System.Drawing.Point(320, 305);
+            this.lblHoraCita.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblHoraCita.Name = "lblHoraCita";
-            this.lblHoraCita.Size = new System.Drawing.Size(123, 19);
+            this.lblHoraCita.Size = new System.Drawing.Size(155, 23);
             this.lblHoraCita.TabIndex = 84;
             this.lblHoraCita.Text = "Hora de la cita";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PruebaConexionDB.Properties.Resources.botonFondo;
-            this.pictureBox1.Location = new System.Drawing.Point(208, 456);
+            this.pictureBox1.Location = new System.Drawing.Point(277, 561);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(200, 64);
+            this.pictureBox1.Size = new System.Drawing.Size(267, 79);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 92;
             this.pictureBox1.TabStop = false;
@@ -152,9 +159,10 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PruebaConexionDB.Properties.Resources.botonFondo;
-            this.pictureBox2.Location = new System.Drawing.Point(464, 456);
+            this.pictureBox2.Location = new System.Drawing.Point(619, 561);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(200, 64);
+            this.pictureBox2.Size = new System.Drawing.Size(267, 79);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 93;
             this.pictureBox2.TabStop = false;
@@ -166,9 +174,10 @@
             this.lblPaciente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblPaciente.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPaciente.ForeColor = System.Drawing.Color.White;
-            this.lblPaciente.Location = new System.Drawing.Point(280, 120);
+            this.lblPaciente.Location = new System.Drawing.Point(373, 148);
+            this.lblPaciente.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPaciente.Name = "lblPaciente";
-            this.lblPaciente.Size = new System.Drawing.Size(77, 19);
+            this.lblPaciente.Size = new System.Drawing.Size(96, 23);
             this.lblPaciente.TabIndex = 88;
             this.lblPaciente.Text = "Paciente";
             // 
@@ -179,9 +188,10 @@
             this.lblFechaCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblFechaCita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFechaCita.ForeColor = System.Drawing.Color.White;
-            this.lblFechaCita.Location = new System.Drawing.Point(224, 200);
+            this.lblFechaCita.Location = new System.Drawing.Point(299, 246);
+            this.lblFechaCita.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblFechaCita.Name = "lblFechaCita";
-            this.lblFechaCita.Size = new System.Drawing.Size(135, 19);
+            this.lblFechaCita.Size = new System.Drawing.Size(170, 23);
             this.lblFechaCita.TabIndex = 94;
             this.lblFechaCita.Text = "Fecha de la cita";
             // 
@@ -192,56 +202,65 @@
             this.lblMedico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblMedico.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMedico.ForeColor = System.Drawing.Color.White;
-            this.lblMedico.Location = new System.Drawing.Point(288, 160);
+            this.lblMedico.Location = new System.Drawing.Point(384, 197);
+            this.lblMedico.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMedico.Name = "lblMedico";
-            this.lblMedico.Size = new System.Drawing.Size(68, 19);
+            this.lblMedico.Size = new System.Drawing.Size(85, 23);
             this.lblMedico.TabIndex = 96;
             this.lblMedico.Text = "Medico";
             // 
             // comboBoxPacientes
             // 
             this.comboBoxPacientes.FormattingEnabled = true;
-            this.comboBoxPacientes.Location = new System.Drawing.Point(368, 120);
+            this.comboBoxPacientes.Location = new System.Drawing.Point(491, 148);
+            this.comboBoxPacientes.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxPacientes.Name = "comboBoxPacientes";
-            this.comboBoxPacientes.Size = new System.Drawing.Size(208, 21);
+            this.comboBoxPacientes.Size = new System.Drawing.Size(276, 24);
             this.comboBoxPacientes.TabIndex = 98;
+            this.comboBoxPacientes.SelectedIndexChanged += new System.EventHandler(this.comboBoxPacientes_SelectedIndexChanged);
             // 
             // comboBoxMedicos
             // 
             this.comboBoxMedicos.FormattingEnabled = true;
-            this.comboBoxMedicos.Location = new System.Drawing.Point(368, 160);
+            this.comboBoxMedicos.Location = new System.Drawing.Point(491, 197);
+            this.comboBoxMedicos.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxMedicos.Name = "comboBoxMedicos";
-            this.comboBoxMedicos.Size = new System.Drawing.Size(208, 21);
+            this.comboBoxMedicos.Size = new System.Drawing.Size(276, 24);
             this.comboBoxMedicos.TabIndex = 99;
+            this.comboBoxMedicos.SelectedIndexChanged += new System.EventHandler(this.comboBoxMedicos_SelectedIndexChanged);
             // 
             // dateTimePickerFechaCita
             // 
-            this.dateTimePickerFechaCita.Location = new System.Drawing.Point(368, 200);
+            this.dateTimePickerFechaCita.Location = new System.Drawing.Point(491, 246);
+            this.dateTimePickerFechaCita.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePickerFechaCita.Name = "dateTimePickerFechaCita";
-            this.dateTimePickerFechaCita.Size = new System.Drawing.Size(208, 20);
+            this.dateTimePickerFechaCita.Size = new System.Drawing.Size(276, 22);
             this.dateTimePickerFechaCita.TabIndex = 100;
             // 
             // numericUpDownHoraCita
             // 
-            this.numericUpDownHoraCita.Location = new System.Drawing.Point(376, 248);
+            this.numericUpDownHoraCita.Location = new System.Drawing.Point(501, 305);
+            this.numericUpDownHoraCita.Margin = new System.Windows.Forms.Padding(4);
             this.numericUpDownHoraCita.Name = "numericUpDownHoraCita";
-            this.numericUpDownHoraCita.Size = new System.Drawing.Size(200, 20);
+            this.numericUpDownHoraCita.Size = new System.Drawing.Size(267, 22);
             this.numericUpDownHoraCita.TabIndex = 101;
             // 
             // comboBoxAmPm
             // 
             this.comboBoxAmPm.FormattingEnabled = true;
-            this.comboBoxAmPm.Location = new System.Drawing.Point(584, 248);
+            this.comboBoxAmPm.Location = new System.Drawing.Point(779, 305);
+            this.comboBoxAmPm.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxAmPm.Name = "comboBoxAmPm";
-            this.comboBoxAmPm.Size = new System.Drawing.Size(56, 21);
+            this.comboBoxAmPm.Size = new System.Drawing.Size(73, 24);
             this.comboBoxAmPm.TabIndex = 102;
             // 
             // textBoxMotivoCita
             // 
-            this.textBoxMotivoCita.Location = new System.Drawing.Point(376, 288);
+            this.textBoxMotivoCita.Location = new System.Drawing.Point(501, 354);
+            this.textBoxMotivoCita.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxMotivoCita.Multiline = true;
             this.textBoxMotivoCita.Name = "textBoxMotivoCita";
-            this.textBoxMotivoCita.Size = new System.Drawing.Size(200, 20);
+            this.textBoxMotivoCita.Size = new System.Drawing.Size(265, 24);
             this.textBoxMotivoCita.TabIndex = 103;
             // 
             // lblEstadoCita
@@ -251,25 +270,27 @@
             this.lblEstadoCita.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lblEstadoCita.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEstadoCita.ForeColor = System.Drawing.Color.White;
-            this.lblEstadoCita.Location = new System.Drawing.Point(264, 328);
+            this.lblEstadoCita.Location = new System.Drawing.Point(352, 404);
+            this.lblEstadoCita.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblEstadoCita.Name = "lblEstadoCita";
-            this.lblEstadoCita.Size = new System.Drawing.Size(94, 19);
+            this.lblEstadoCita.Size = new System.Drawing.Size(120, 23);
             this.lblEstadoCita.TabIndex = 104;
             this.lblEstadoCita.Text = "Estado Cita";
             // 
             // comboBoxEstadoCita
             // 
             this.comboBoxEstadoCita.FormattingEnabled = true;
-            this.comboBoxEstadoCita.Location = new System.Drawing.Point(376, 328);
+            this.comboBoxEstadoCita.Location = new System.Drawing.Point(501, 404);
+            this.comboBoxEstadoCita.Margin = new System.Windows.Forms.Padding(4);
             this.comboBoxEstadoCita.Name = "comboBoxEstadoCita";
-            this.comboBoxEstadoCita.Size = new System.Drawing.Size(200, 21);
+            this.comboBoxEstadoCita.Size = new System.Drawing.Size(265, 24);
             this.comboBoxEstadoCita.TabIndex = 105;
             // 
             // agregarCita
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(872, 561);
+            this.ClientSize = new System.Drawing.Size(1163, 690);
             this.Controls.Add(this.comboBoxEstadoCita);
             this.Controls.Add(this.lblEstadoCita);
             this.Controls.Add(this.textBoxMotivoCita);
@@ -290,9 +311,11 @@
             this.Controls.Add(this.btnMedicos);
             this.Controls.Add(this.btnCerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "agregarCita";
             this.Text = "agregarCita";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.agregarCita_Load);
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

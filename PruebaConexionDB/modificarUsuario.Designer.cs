@@ -40,12 +40,12 @@
             this.btnLimpiar = new System.Windows.Forms.Button();
             this.txtId = new System.Windows.Forms.TextBox();
             this.lblId = new System.Windows.Forms.Label();
-            this.btnCerrar = new System.Windows.Forms.PictureBox();
-            this.btnBienvenida = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlEliminarUsuarios = new System.Windows.Forms.Panel();
             this.pnlEliminarUsuario = new System.Windows.Forms.Panel();
+            this.btnBienvenida = new System.Windows.Forms.Button();
+            this.btnCerrar = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -56,9 +56,10 @@
             this.lblNombre.AutoSize = true;
             this.lblNombre.BackColor = System.Drawing.Color.White;
             this.lblNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(424, 224);
+            this.lblNombre.Location = new System.Drawing.Point(565, 276);
+            this.lblNombre.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(73, 21);
+            this.lblNombre.Size = new System.Drawing.Size(90, 23);
             this.lblNombre.TabIndex = 1;
             this.lblNombre.Text = "Nombre";
             // 
@@ -67,9 +68,10 @@
             this.lblUsuario.AutoSize = true;
             this.lblUsuario.BackColor = System.Drawing.Color.White;
             this.lblUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsuario.Location = new System.Drawing.Point(431, 264);
+            this.lblUsuario.Location = new System.Drawing.Point(575, 325);
+            this.lblUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsuario.Name = "lblUsuario";
-            this.lblUsuario.Size = new System.Drawing.Size(66, 21);
+            this.lblUsuario.Size = new System.Drawing.Size(79, 23);
             this.lblUsuario.TabIndex = 2;
             this.lblUsuario.Text = "Usuario";
             // 
@@ -78,9 +80,10 @@
             this.lblContraseña.AutoSize = true;
             this.lblContraseña.BackColor = System.Drawing.Color.White;
             this.lblContraseña.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContraseña.Location = new System.Drawing.Point(394, 304);
+            this.lblContraseña.Location = new System.Drawing.Point(525, 374);
+            this.lblContraseña.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblContraseña.Name = "lblContraseña";
-            this.lblContraseña.Size = new System.Drawing.Size(103, 21);
+            this.lblContraseña.Size = new System.Drawing.Size(125, 23);
             this.lblContraseña.TabIndex = 3;
             this.lblContraseña.Text = "Contraseña";
             // 
@@ -89,42 +92,48 @@
             this.lblTipoUsuario.AutoSize = true;
             this.lblTipoUsuario.BackColor = System.Drawing.Color.White;
             this.lblTipoUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTipoUsuario.Location = new System.Drawing.Point(370, 344);
+            this.lblTipoUsuario.Location = new System.Drawing.Point(493, 423);
+            this.lblTipoUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTipoUsuario.Name = "lblTipoUsuario";
-            this.lblTipoUsuario.Size = new System.Drawing.Size(127, 21);
+            this.lblTipoUsuario.Size = new System.Drawing.Size(156, 23);
             this.lblTipoUsuario.TabIndex = 4;
             this.lblTipoUsuario.Text = "Tipo de Usuario";
             // 
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(544, 232);
+            this.txtNombre.Location = new System.Drawing.Point(725, 286);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(112, 27);
+            this.txtNombre.Size = new System.Drawing.Size(148, 32);
             this.txtNombre.TabIndex = 5;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             // 
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(544, 272);
+            this.txtUsuario.Location = new System.Drawing.Point(725, 335);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(112, 27);
+            this.txtUsuario.Size = new System.Drawing.Size(148, 32);
             this.txtUsuario.TabIndex = 6;
             // 
             // txtPassword
             // 
             this.txtPassword.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPassword.Location = new System.Drawing.Point(544, 312);
+            this.txtPassword.Location = new System.Drawing.Point(725, 384);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(112, 27);
+            this.txtPassword.Size = new System.Drawing.Size(148, 32);
             this.txtPassword.TabIndex = 7;
             // 
             // txtTipoUsuario
             // 
             this.txtTipoUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTipoUsuario.Location = new System.Drawing.Point(544, 352);
+            this.txtTipoUsuario.Location = new System.Drawing.Point(725, 433);
+            this.txtTipoUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtTipoUsuario.Name = "txtTipoUsuario";
-            this.txtTipoUsuario.Size = new System.Drawing.Size(112, 27);
+            this.txtTipoUsuario.Size = new System.Drawing.Size(148, 32);
             this.txtTipoUsuario.TabIndex = 8;
             // 
             // btnModificar
@@ -134,9 +143,10 @@
             this.btnModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnModificar.ForeColor = System.Drawing.Color.White;
-            this.btnModificar.Location = new System.Drawing.Point(584, 448);
+            this.btnModificar.Location = new System.Drawing.Point(779, 551);
+            this.btnModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(168, 32);
+            this.btnModificar.Size = new System.Drawing.Size(224, 39);
             this.btnModificar.TabIndex = 9;
             this.btnModificar.Text = "Modificar Usuario";
             this.btnModificar.UseVisualStyleBackColor = false;
@@ -149,9 +159,10 @@
             this.btnLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLimpiar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLimpiar.ForeColor = System.Drawing.Color.White;
-            this.btnLimpiar.Location = new System.Drawing.Point(392, 448);
+            this.btnLimpiar.Location = new System.Drawing.Point(523, 551);
+            this.btnLimpiar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLimpiar.Name = "btnLimpiar";
-            this.btnLimpiar.Size = new System.Drawing.Size(168, 32);
+            this.btnLimpiar.Size = new System.Drawing.Size(224, 39);
             this.btnLimpiar.TabIndex = 10;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = false;
@@ -160,9 +171,10 @@
             // txtId
             // 
             this.txtId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtId.Location = new System.Drawing.Point(544, 184);
+            this.txtId.Location = new System.Drawing.Point(725, 226);
+            this.txtId.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtId.Name = "txtId";
-            this.txtId.Size = new System.Drawing.Size(112, 27);
+            this.txtId.Size = new System.Drawing.Size(148, 32);
             this.txtId.TabIndex = 12;
             // 
             // lblId
@@ -170,24 +182,28 @@
             this.lblId.AutoSize = true;
             this.lblId.BackColor = System.Drawing.Color.White;
             this.lblId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblId.Location = new System.Drawing.Point(471, 176);
+            this.lblId.Location = new System.Drawing.Point(628, 217);
+            this.lblId.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(26, 21);
+            this.lblId.Size = new System.Drawing.Size(29, 23);
             this.lblId.TabIndex = 11;
             this.lblId.Text = "Id";
             // 
-            // btnCerrar
+            // pnlEliminarUsuarios
             // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCerrar.Image = global::PruebaConexionDB.Properties.Resources.closeWindow;
-            this.btnCerrar.Location = new System.Drawing.Point(1176, 0);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Size = new System.Drawing.Size(44, 32);
-            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCerrar.TabIndex = 30;
-            this.btnCerrar.TabStop = false;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            this.pnlEliminarUsuarios.Location = new System.Drawing.Point(448, 158);
+            this.pnlEliminarUsuarios.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEliminarUsuarios.Name = "pnlEliminarUsuarios";
+            this.pnlEliminarUsuarios.Size = new System.Drawing.Size(245, 335);
+            this.pnlEliminarUsuarios.TabIndex = 34;
+            // 
+            // pnlEliminarUsuario
+            // 
+            this.pnlEliminarUsuario.Location = new System.Drawing.Point(693, 158);
+            this.pnlEliminarUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlEliminarUsuario.Name = "pnlEliminarUsuario";
+            this.pnlEliminarUsuario.Size = new System.Drawing.Size(384, 335);
+            this.pnlEliminarUsuario.TabIndex = 35;
             // 
             // btnBienvenida
             // 
@@ -200,20 +216,36 @@
             this.btnBienvenida.ForeColor = System.Drawing.Color.White;
             this.btnBienvenida.Image = global::PruebaConexionDB.Properties.Resources.users64;
             this.btnBienvenida.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnBienvenida.Location = new System.Drawing.Point(400, 24);
+            this.btnBienvenida.Location = new System.Drawing.Point(533, 30);
+            this.btnBienvenida.Margin = new System.Windows.Forms.Padding(4);
             this.btnBienvenida.Name = "btnBienvenida";
-            this.btnBienvenida.Size = new System.Drawing.Size(353, 80);
+            this.btnBienvenida.Size = new System.Drawing.Size(471, 98);
             this.btnBienvenida.TabIndex = 31;
             this.btnBienvenida.Text = "Modificar Usuario";
             this.btnBienvenida.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBienvenida.UseVisualStyleBackColor = false;
             // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnCerrar.Image = global::PruebaConexionDB.Properties.Resources.closeWindow;
+            this.btnCerrar.Location = new System.Drawing.Point(1568, 0);
+            this.btnCerrar.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Size = new System.Drawing.Size(59, 39);
+            this.btnCerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.btnCerrar.TabIndex = 30;
+            this.btnCerrar.TabStop = false;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::PruebaConexionDB.Properties.Resources.botonFondo;
-            this.pictureBox2.Location = new System.Drawing.Point(384, 440);
+            this.pictureBox2.Location = new System.Drawing.Point(512, 542);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(184, 48);
+            this.pictureBox2.Size = new System.Drawing.Size(245, 59);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
@@ -221,33 +253,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::PruebaConexionDB.Properties.Resources.botonFondo;
-            this.pictureBox1.Location = new System.Drawing.Point(576, 440);
+            this.pictureBox1.Location = new System.Drawing.Point(768, 542);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(184, 48);
+            this.pictureBox1.Size = new System.Drawing.Size(245, 59);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 33;
             this.pictureBox1.TabStop = false;
             // 
-            // pnlEliminarUsuarios
-            // 
-            this.pnlEliminarUsuarios.Location = new System.Drawing.Point(336, 128);
-            this.pnlEliminarUsuarios.Name = "pnlEliminarUsuarios";
-            this.pnlEliminarUsuarios.Size = new System.Drawing.Size(184, 272);
-            this.pnlEliminarUsuarios.TabIndex = 34;
-            // 
-            // pnlEliminarUsuario
-            // 
-            this.pnlEliminarUsuario.Location = new System.Drawing.Point(520, 128);
-            this.pnlEliminarUsuario.Name = "pnlEliminarUsuario";
-            this.pnlEliminarUsuario.Size = new System.Drawing.Size(288, 272);
-            this.pnlEliminarUsuario.TabIndex = 35;
-            // 
             // modificarUsuario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(192)))), ((int)(((byte)(204)))));
-            this.ClientSize = new System.Drawing.Size(1222, 710);
+            this.ClientSize = new System.Drawing.Size(1629, 874);
             this.Controls.Add(this.btnBienvenida);
             this.Controls.Add(this.btnCerrar);
             this.Controls.Add(this.txtId);
@@ -267,6 +286,7 @@
             this.Controls.Add(this.pnlEliminarUsuario);
             this.Controls.Add(this.pnlEliminarUsuarios);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "modificarUsuario";
             this.Text = "modificarUsuario";
             ((System.ComponentModel.ISupportInitialize)(this.btnCerrar)).EndInit();

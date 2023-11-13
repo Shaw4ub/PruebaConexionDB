@@ -166,5 +166,20 @@ namespace PruebaConexionDB
         {
             this.Close();
         }
+
+        private void agregarCita_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxPacientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxMedicos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

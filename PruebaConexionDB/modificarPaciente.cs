@@ -149,5 +149,30 @@ namespace PruebaConexionDB
         {
             this.Close();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            txtNombre.Text = System.Text.RegularExpressions.Regex.Replace(txtNombre.Text, @"[^A-Za-zñÑ\s]", "");
+        }
+
+        private void txtApellido_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            txtApellido.Text = System.Text.RegularExpressions.Regex.Replace(txtApellido.Text, @"[^A-Za-zñÑ\s]", "");
+        }
+
+        private void txtGenero_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            txtGenero.Text = System.Text.RegularExpressions.Regex.Replace(txtGenero.Text, @"[^A-Za-zñÑ\s]", "");
+
+        }
+
+        private void txtTelefono_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte numeros
+            txtTelefono.Text = System.Text.RegularExpressions.Regex.Replace(txtTelefono.Text, @"[^0-9]", "");
+        }
     }
 }

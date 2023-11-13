@@ -86,5 +86,17 @@ namespace PruebaConexionDB
         {
             this.Close();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            System.Text.RegularExpressions.Regex.IsMatch(txtNombre.Text, "[^a-zA-Z]");
+            
+        }
+
+        private void txtTipoUsuario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

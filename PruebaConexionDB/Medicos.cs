@@ -127,5 +127,10 @@ namespace PruebaConexionDB
             agregarMedico agregarMedico = new agregarMedico();
             agregarMedico.Show();
         }
+
+        private void Medicos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

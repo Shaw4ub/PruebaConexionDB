@@ -48,7 +48,7 @@ namespace PruebaConexionDB
 
         private void btnRecetas_Click(object sender, EventArgs e)
         {
-
+            AbrirFormEnPanel(new principalRecetas());
         }
 
         private void btnFacturas_Click(object sender, EventArgs e)
@@ -75,6 +75,11 @@ namespace PruebaConexionDB
 
             Login loginForm = new Login();
             loginForm.Show();
+        }
+
+        private void pnlContenedor_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

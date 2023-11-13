@@ -97,5 +97,16 @@ namespace PruebaConexionDB
         {
             this.Close();
         }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+            //Haz que este texto solo acepte letras
+            if (System.Text.RegularExpressions.Regex.IsMatch(txtNombre.Text, "[^a-zA-Z]"))
+            {
+                MessageBox.Show("Por favor ingrese solo letras.");
+                txtNombre.Text = txtNombre.Text.Remove(txtNombre.Text.Length - 1);
+            }
+        }
     }
+
 }
